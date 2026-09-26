@@ -15,9 +15,9 @@ If a feature is planned but not implemented, put it under "Future Improvements" 
 
 The README must be professional, technical, hackathon-ready, and easy for judges/developers to understand.
 
-==================================================
+
 PROJECT TITLE
-==================================================
+
 
 # 🛡️ SecureRepair AI
 
@@ -31,9 +31,9 @@ Core concept:
 
 SCAN → DETECT → REASON → REPAIR → TEST → VERIFY → RETRY
 
-==================================================
+
 1. PROJECT OVERVIEW
-==================================================
+
 
 Explain the problem:
 
@@ -61,9 +61,9 @@ Do not claim the system detects every vulnerability.
 
 Clearly state that the current detection capability depends on the security rules implemented in the scanner.
 
-==================================================
+
 2. PROBLEM STATEMENT
-==================================================
+
 
 Explain:
 
@@ -80,9 +80,9 @@ Security analysis tools can produce findings, but developers still need to:
 
 SecureRepair AI attempts to automate this workflow through an agentic pipeline.
 
-==================================================
+
 3. SOLUTION
-==================================================
+
 
 Explain the solution:
 
@@ -130,9 +130,9 @@ PASS / FAIL
  ↓
 Verified Patch / Retry
 
-==================================================
+
 4. AGENTIC AI WORKFLOW
-==================================================
+
 
 Create a section explaining why this is an Agentic AI system.
 
@@ -179,9 +179,9 @@ IMPORTANT:
 
 Do not claim that every stage is fully autonomous if the current implementation still requires user interaction.
 
-==================================================
+
 5. SYSTEM ARCHITECTURE
-==================================================
+
 
 Create a clean architecture diagram:
 
@@ -288,9 +288,9 @@ Responsibilities:
 
 Do not claim functions that are not actually present.
 
-==================================================
+
 7. REPOSITORY LOADING
-==================================================
+
 
 Explain that the system can work with a repository supplied by the user.
 
@@ -323,9 +323,9 @@ The original GitHub repository should not be modified automatically.
 
 The system should work on a temporary/local working copy unless the implementation explicitly supports pushing changes.
 
-==================================================
+
 8. CODE SCANNER
-==================================================
+
 
 Explain scanner.py accurately.
 
@@ -343,9 +343,9 @@ IMPORTANT:
 
 Do not claim that the scanner uses SonarQube, Semgrep, Snyk, Bandit, or other external security scanners unless the code actually uses them.
 
-==================================================
+
 9. AST ANALYSIS
-==================================================
+
 
 Explain Abstract Syntax Tree.
 
@@ -375,9 +375,9 @@ Import
 
 Only list structures actually used by the implementation as implemented.
 
-==================================================
+
 10. VULNERABILITY DETECTION
-==================================================
+
 
 Explain the implemented security rules.
 
@@ -419,9 +419,9 @@ Use wording such as:
 
 "Detects selected SQL injection patterns."
 
-==================================================
+
 11. SECURITY FINDING FORMAT
-==================================================
+
 
 Explain that findings can contain structured information such as:
 
@@ -440,9 +440,9 @@ Do not claim every field exists unless the current scanner actually returns it.
 
 Explain that the finding provides context for the repair agent.
 
-==================================================
+
 12. WHY GENERATIVE AI?
-==================================================
+
 
 This section is VERY IMPORTANT.
 
@@ -485,9 +485,9 @@ AI-generated patch
 ≠
 Verified patch
 
-==================================================
+
 13. REPAIR AGENT
-==================================================
+
 
 Explain repair_agent.py.
 
@@ -509,9 +509,9 @@ Explain that the repair agent attempts to:
 
 Do not claim that the model guarantees security.
 
-==================================================
+
 14. BEFORE / AFTER
-==================================================
+
 
 Explain that the system can display:
 
@@ -525,9 +525,9 @@ AI-generated repaired source code
 
 This allows developers to review the proposed change.
 
-==================================================
+
 15. PATCH / DIFF
-==================================================
+
 
 If diff generation is implemented, explain that the system compares:
 
@@ -547,9 +547,9 @@ Example:
 
 Do not hardcode fake diffs in the documentation.
 
-==================================================
+
 16. VERIFICATION
-==================================================
+
 
 Explain that verification is the most important safety layer.
 
@@ -580,9 +580,9 @@ New Candidate
  ↓
 Verification
 
-==================================================
+
 17. DOCKER / SANDBOX
-==================================================
+
 
 If Docker verification is implemented, explain:
 
@@ -603,9 +603,9 @@ If Docker is not currently integrated, write:
 
 instead of claiming it is implemented.
 
-==================================================
+
 18. RETRY LOOP
-==================================================
+
 
 If implemented, explain:
 
@@ -627,9 +627,9 @@ Use a limited maximum number of attempts.
 
 Never claim infinite autonomous repair.
 
-==================================================
+
 19. USER INTERFACE
-==================================================
+
 
 Describe the Streamlit UI.
 
@@ -672,9 +672,9 @@ If failed:
 
 FAILED
 
-==================================================
+
 20. TECHNOLOGY STACK
-==================================================
+
 
 Create a table:
 
@@ -696,9 +696,9 @@ IMPORTANT:
 
 Mark optional/unimplemented technologies as planned instead of implemented.
 
-==================================================
+
 21. PROJECT STRUCTURE
-==================================================
+
 
 Create a project structure based ONLY on files that actually exist.
 
@@ -721,9 +721,8 @@ If additional modules exist, include them.
 
 Do not invent missing files.
 
-==================================================
 22. INSTALLATION
-==================================================
+
 
 Provide Windows instructions.
 
@@ -757,9 +756,9 @@ Never put real credentials in .env.example.
 
 Use placeholders only.
 
-==================================================
+
 23. RUNNING
-==================================================
+
 
 Run:
 
@@ -777,9 +776,9 @@ Explain the UI workflow:
 8. Run verification
 9. Review final result
 
-==================================================
+
 24. SECURITY PRACTICES
-==================================================
+
 
 Explain:
 
@@ -791,9 +790,8 @@ Explain:
 - Do not automatically push generated patches to the original repository
 - Generated code must be verified before being considered safe
 
-==================================================
 25. SWE-AGENT ACKNOWLEDGEMENT
-==================================================
+
 
 IMPORTANT:
 
@@ -821,9 +819,9 @@ SecureRepair AI adds a security-focused workflow around:
 
 Only claim components that are actually implemented in this repository.
 
-==================================================
+
 26. DIFFERENCE FROM GENERIC CODE AGENTS
-==================================================
+
 
 Explain the security-specific focus.
 
@@ -859,9 +857,9 @@ Do not claim SecureRepair AI is superior to SWE-agent.
 
 Simply explain the different focus.
 
-==================================================
+
 27. LIMITATIONS
-==================================================
+
 
 Include an honest limitations section.
 
@@ -876,9 +874,9 @@ Examples:
 - Docker verification may not be available in every deployment environment.
 - Multi-language support depends on implemented parsers/rules.
 
-==================================================
+
 28. FUTURE IMPROVEMENTS
-==================================================
+
 
 Include:
 
@@ -900,9 +898,9 @@ Include:
 
 Clearly mark these as future work unless already implemented.
 
-==================================================
+
 29. DEMO FLOW
-==================================================
+
 
 Create a simple demo:
 
@@ -954,9 +952,9 @@ IMPORTANT:
 
 This is a workflow example, not a claim that every repository will produce CWE-89.
 
-==================================================
+
 30. PROJECT PHILOSOPHY
-==================================================
+
 
 Include:
 
@@ -976,9 +974,9 @@ Verification
 
 This creates a more controlled security-repair workflow.
 
-==================================================
+
 31. HACKATHON VALUE
-==================================================
+
 
 Explain the project value:
 
@@ -994,9 +992,9 @@ Explain the project value:
 
 Do not exaggerate claims.
 
-==================================================
+
 32. FINAL README STYLE
-==================================================
+
 
 The README should be:
 
@@ -1037,9 +1035,9 @@ Do NOT claim that every vulnerability can be detected.
 
 Do NOT claim that every AI patch is correct.
 
-==================================================
+
 33. FINAL README STRUCTURE
-==================================================
+
 
 Use this order:
 
@@ -1074,9 +1072,9 @@ Use this order:
 29. Hackathon Value
 30. License / Contribution
 
-==================================================
+
 FINAL INSTRUCTION
-==================================================
+
 
 Generate the COMPLETE README.md in Markdown.
 
